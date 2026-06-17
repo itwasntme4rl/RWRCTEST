@@ -24,7 +24,10 @@
 
     <!-- Language Switcher Script -->
     <script>
+        window.currentLanguage = 'en';
+
         function switchLanguage(lang) {
+            window.currentLanguage = lang;
             document.documentElement.lang = lang;
             document.querySelectorAll('[data-en]').forEach(el => {
                 if (lang === 'es' && el.getAttribute('data-es')) {
@@ -33,6 +36,7 @@
                     el.textContent = el.getAttribute('data-en');
                 }
             });
+            window.dispatchEvent(new CustomEvent('languagechange', { detail: { lang } }));
         }
     </script>
 
@@ -57,9 +61,26 @@
 </nav>
 </header>
 
-<div style="text-align: right; padding: 10px; background: #f8f8f8;">
+<div class="language-strip">
     <button onclick="switchLanguage('en')">🇺🇸 English</button>
     <button onclick="switchLanguage('es')">🇪🇸 Español</button>
+</div>
+
+<div class="storm-alert" aria-label="Storm damage alert">
+    <div class="storm-alert-track">
+        <span
+            class="storm-alert-message"
+            data-en="Emergency roof leak or storm damage? Fast inspections available across Arkansas. Call 501.529.4768."
+            data-es="¿Gotera de emergencia o daños por tormenta? Inspecciones rápidas disponibles en Arkansas. Llame al 501.529.4768.">
+            Emergency roof leak or storm damage? Fast inspections available across Arkansas. Call 501.529.4768.
+        </span>
+        <span
+            class="storm-alert-message"
+            data-en="Emergency roof leak or storm damage? Fast inspections available across Arkansas. Call 501.529.4768."
+            data-es="¿Gotera de emergencia o daños por tormenta? Inspecciones rápidas disponibles en Arkansas. Llame al 501.529.4768.">
+            Emergency roof leak or storm damage? Fast inspections available across Arkansas. Call 501.529.4768.
+        </span>
+    </div>
 </div>
 
 <section class="hero">
