@@ -37,7 +37,7 @@ const ownerPhrases = [
     'SERVING LONOKE',
     'SERVING ROGERS',
     'SERVING WEST MEMPHIS',
-    'SERVING ARKANSAS!!',
+    'SERVING ARKANSAS',
 ];
 
 if (ownerTypewriter) {
