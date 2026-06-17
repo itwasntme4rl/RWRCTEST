@@ -23,7 +23,7 @@ const ownerTypewriter = document.getElementById('ownerTypewriter');
 const ownerPhrases = [
     '25+ YEARS OF EXPERIENCE',
     'LICENSED & INSURED',
-    'HUNDREDS OF ROOFS COMPLETED',
+    '700+ OF ROOFS COMPLETED',
     'SERVING LITTLE ROCK',
     'SERVING CABOT',
     'SERVING CONWAY',
