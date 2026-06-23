@@ -1,17 +1,17 @@
 ﻿:root {
-  --red: #008cff;
-  --dark-red: #0047c7;
+  --red: #8a0028;
+  --dark-red: #4b0016;
   --black: #000000;
-  --charcoal: #082f6f;
-  --text: #f2f6ff;
-  --muted: #b8ccef;
-  --white: #0a397d;
-  --gold: #ffda6a;
-  --navy: #082a5f;
-  --electric-blue: #008cff;
-  --cyan-blue: #21c7ff;
-  --deep-blue: #0058c8;
-  --shadow: 0 18px 45px rgba(0, 140, 255, .24);
+  --charcoal: #5c001b;
+  --text: #fff7ef;
+  --muted: #f0c7b8;
+  --white: #6f001f;
+  --gold: #d7a64a;
+  --navy: #4b0016;
+  --electric-blue: #9d1134;
+  --cyan-blue: #f0bf62;
+  --deep-blue: #6f001f;
+  --shadow: 0 18px 45px rgba(138, 0, 40, .28);
 }
 
 * { box-sizing: border-box; }
@@ -21,7 +21,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--text);
-  background: #082a5f;
+  background: #4b0016;
 }
 
 body.loading {
@@ -101,8 +101,8 @@ a {
   top: 0;
   z-index: 50;
   background: #000;
-  border-bottom: 1px solid rgba(0,140,255,.45);
-  box-shadow: 0 6px 24px rgba(0,140,255,.26);
+  border-bottom: 1px solid rgba(215,166,74,.48);
+  box-shadow: 0 6px 24px rgba(138,0,40,.32);
 }
 
 .nav {
@@ -137,15 +137,15 @@ a {
   justify-content: flex-end;
   gap: 6px;
   padding: 5px 12px;
-  background: #061d45;
-  border-bottom: 1px solid rgba(0,140,255,.32);
+  background: #2a000c;
+  border-bottom: 1px solid rgba(215,166,74,.32);
 }
 
 .language-strip button {
   padding: 4px 9px;
-  border: 1px solid rgba(33,199,255,.42);
+  border: 1px solid rgba(215,166,74,.48);
   border-radius: 4px;
-  background: #0a397d;
+  background: #6f001f;
   color: #f2f6ff;
   font: inherit;
   font-size: .78rem;
@@ -163,11 +163,11 @@ a {
 .primary-btn {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #ffe8a3, var(--gold) 45%, #d99b18);
+  background: linear-gradient(135deg, #ffe4a0, var(--gold) 48%, #9f6f1d);
   color: #030915;
   padding: 11px 18px;
   border-radius: 10px;
-  box-shadow: 0 12px 34px rgba(245,200,91,.24), var(--shadow);
+  box-shadow: 0 12px 34px rgba(215,166,74,.28), var(--shadow);
   border: 0;
   font-weight: 800;
   cursor: pointer;
@@ -196,11 +196,11 @@ a {
 }
 
 .secondary-btn {
-  border: 2px solid rgba(33,199,255,.58);
+  border: 2px solid rgba(215,166,74,.58);
   padding: 10px 18px;
   border-radius: 10px;
   font-weight: 900;
-  background: #0a397d;
+  background: #6f001f;
   color: #f2f6ff;
 }
 
@@ -217,7 +217,7 @@ a {
   min-height: 620px;
   display: flex;
   align-items: center;
-  background: linear-gradient(105deg, rgba(8,42,95,.92) 0 50%, rgba(0,140,255,.16) 50%),
+  background: linear-gradient(105deg, rgba(75,0,22,.92) 0 50%, rgba(138,0,40,.20) 50%),
               url('assets/business-card-theme.png') center/cover no-repeat;
 }
 
@@ -226,7 +226,7 @@ a {
   position: absolute;
   inset: 0 0 0 auto;
   width: 43%;
-  background: linear-gradient(90deg, rgba(0,140,255,.16), rgba(6,31,76,.82));
+  background: linear-gradient(90deg, rgba(215,166,74,.10), rgba(58,0,17,.84));
   clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -262,7 +262,7 @@ h2 {
 .lead {
   font-size: 1.2rem;
   max-width: 620px;
-  color: #e4f0ff;
+  color: #ffeadd;
   line-height: 1.55;
 }
 
@@ -276,7 +276,7 @@ h2 {
 /* ================= OWNER CARD ================= */
 .owner-card {
   color: #f2f6ff;
-  background: rgba(5,32,76,.90);
+  background: rgba(58,0,17,.90);
   border-left: 8px solid var(--gold);
   padding: 34px;
   box-shadow: var(--shadow);
@@ -316,11 +316,11 @@ h2 {
 
 /* ================= QUICK CONTACT ================= */
 .quick-contact {
-  background: #061f4c;
+  background: #3a0011;
   color: #f2f6ff;
-  border-top: 1px solid rgba(0,200,255,.3);
+  border-top: 1px solid rgba(215,166,74,.34);
   border-bottom: 3px solid var(--gold);
-  box-shadow: 0 14px 34px rgba(0,140,255,.16);
+  box-shadow: 0 14px 34px rgba(138,0,40,.24);
 }
 
 .contact-strip {
@@ -331,7 +331,7 @@ h2 {
 }
 
 .contact-strip strong {
-  color: #d7dce6;
+  color: #eed8cf;
   display: block;
   font-size: .8rem;
   text-transform: uppercase;
@@ -341,12 +341,12 @@ h2 {
 /* ================= SECTIONS ================= */
 .section {
   padding: 88px 0;
-  background: #082a5f;
+  background: #4b0016;
 }
 
 #services {
   padding-top: 74px;
-  border-top: 1px solid rgba(0,200,255,.2);
+  border-top: 1px solid rgba(215,166,74,.24);
 }
 
 .cards {
@@ -357,11 +357,11 @@ h2 {
 }
 
 .card {
-  background: #0a397d;
-  border: 1px solid rgba(33,199,255,.28);
+  background: #6f001f;
+  border: 1px solid rgba(215,166,74,.26);
   border-top: 5px solid var(--gold);
   padding: 26px;
-  box-shadow: 0 12px 30px rgba(0,48,112,.28);
+  box-shadow: 0 12px 30px rgba(40,0,12,.32);
 }
 
 .card h3 {
@@ -376,7 +376,7 @@ h2 {
 
 /* ================= ESTIMATE ================= */
 .split-section {
-  background: linear-gradient(135deg, #0a4da3, #0a397d);
+  background: linear-gradient(135deg, #7d0024, #5c001b);
   padding: 88px 0;
 }
 
@@ -401,12 +401,12 @@ h2 {
 }
 
 .estimate-form {
-  background: #082a5f;
+  background: #4b0016;
   color: #f2f6ff;
   padding: 34px;
   border-radius: 18px;
   box-shadow: var(--shadow);
-  border: 1px solid rgba(33,199,255,.28);
+  border: 1px solid rgba(215,166,74,.26);
   display: grid;
   gap: 18px;
 }
@@ -420,10 +420,10 @@ input, select, textarea {
   width: 100%;
   margin-top: 6px;
   padding: 14px;
-  border: 1px solid rgba(33,199,255,.38);
+  border: 1px solid rgba(215,166,74,.36);
   border-radius: 10px;
   font: inherit;
-  background: #0a397d;
+  background: #6f001f;
   color: #f2f6ff;
 }
 
@@ -448,8 +448,8 @@ input, select, textarea {
 }
 
 .faq-item {
-  background: rgba(255,255,255,.10);
-  border: 1px solid rgba(33,199,255,.28);
+  background: rgba(255,238,220,.08);
+  border: 1px solid rgba(215,166,74,.26);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -490,7 +490,7 @@ input, select, textarea {
 
 /* ================= FOOTER (FIXED PROPERLY) ================= */
 .footer {
-  background: #041631;
+  background: #170007;
   color: #f2f6ff;
   padding: 60px 0 25px;
 }
@@ -524,7 +524,7 @@ input, select, textarea {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(33,199,255,0.24);
+  border-top: 1px solid rgba(215,166,74,0.24);
   margin-top: 35px;
   padding-top: 15px;
   text-align: center;
@@ -557,10 +557,10 @@ input, select, textarea {
     top: 100%;
     left: 0;
     right: 0;
-    background: #061d45;
+    background: #2a000c;
     flex-direction: column;
     padding: 20px;
-    box-shadow: 0 10px 25px rgba(0,48,112,.28);
+    box-shadow: 0 10px 25px rgba(40,0,12,.34);
     gap: 18px;
     z-index: 100;
   }
@@ -572,7 +572,7 @@ input, select, textarea {
   .hero {
     min-height: auto;
     padding: 110px 0 70px;
-    background: linear-gradient(135deg, #0a4da3, #0a397d 52%, #061f4c) !important;
+    background: linear-gradient(135deg, #7d0024, #5c001b 52%, #3a0011) !important;
   }
 
   .hero::after {
@@ -677,9 +677,9 @@ input, select, textarea {
   position: absolute;
   border: 0;
   color: #f2f6ff;
-  background: rgba(0,140,255,.96);
+  background: rgba(111,0,31,.96);
   cursor: pointer;
-  box-shadow: 0 10px 30px rgba(0,48,112,.42);
+  box-shadow: 0 10px 30px rgba(40,0,12,.48);
 }
 
 .lightbox-close {
@@ -748,7 +748,7 @@ input, select, textarea {
   bottom: 20px;
   right: 20px;
   overflow: hidden;
-  background: linear-gradient(135deg, #ffe8a3, var(--gold) 45%, #d99b18);
+  background: linear-gradient(135deg, #ffe4a0, var(--gold) 48%, #9f6f1d);
   color: #030915;
   padding: 15px 22px;
   border-radius: 999px;
@@ -756,6 +756,7 @@ input, select, textarea {
   z-index: 9999;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
+
 
 
 
