@@ -1,17 +1,17 @@
 ﻿:root {
-  --red: #8a0028;
-  --dark-red: #4b0016;
+  --red: #d4a017;
+  --dark-red: #8f6b10;
   --black: #000000;
-  --charcoal: #5c001b;
-  --text: #fff7ef;
-  --muted: #f0c7b8;
-  --white: #6f001f;
-  --gold: #d7a64a;
-  --navy: #4b0016;
-  --electric-blue: #9d1134;
-  --cyan-blue: #f0bf62;
-  --deep-blue: #6f001f;
-  --shadow: 0 18px 45px rgba(138, 0, 40, .28);
+  --charcoal: #222222;
+  --text: #ffffff;
+  --muted: #e5e5e5;
+  --white: #2a2a2a;
+  --gold: #d4a017;
+  --navy: #1a1a1a;
+  --electric-blue: #d4a017;
+  --cyan-blue: #f1c75b;
+  --deep-blue: #2a2a2a;
+  --shadow: 0 18px 45px rgba(0, 0, 0, .34);
 }
 
 * { box-sizing: border-box; }
@@ -21,7 +21,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--text);
-  background: #4b0016;
+  background: #1a1a1a;
 }
 
 body.loading {
@@ -102,7 +102,7 @@ a {
   z-index: 50;
   background: #000;
   border-bottom: 1px solid rgba(215,166,74,.48);
-  box-shadow: 0 6px 24px rgba(138,0,40,.32);
+  box-shadow: 0 6px 24px rgba(0,0,0,.38);
 }
 
 .nav {
@@ -137,7 +137,7 @@ a {
   justify-content: flex-end;
   gap: 6px;
   padding: 5px 12px;
-  background: #2a000c;
+  background: #111111;
   border-bottom: 1px solid rgba(215,166,74,.32);
 }
 
@@ -145,7 +145,7 @@ a {
   padding: 4px 9px;
   border: 1px solid rgba(215,166,74,.48);
   border-radius: 4px;
-  background: #6f001f;
+  background: #2a2a2a;
   color: #f2f6ff;
   font: inherit;
   font-size: .78rem;
@@ -163,11 +163,11 @@ a {
 .primary-btn {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #ffe4a0, var(--gold) 48%, #9f6f1d);
+  background: linear-gradient(135deg, #f7df9a, var(--gold) 48%, #8f6b10);
   color: #030915;
   padding: 11px 18px;
   border-radius: 10px;
-  box-shadow: 0 12px 34px rgba(215,166,74,.28), var(--shadow);
+  box-shadow: 0 12px 34px rgba(212,160,23,.24), var(--shadow);
   border: 0;
   font-weight: 800;
   cursor: pointer;
@@ -200,7 +200,7 @@ a {
   padding: 10px 18px;
   border-radius: 10px;
   font-weight: 900;
-  background: #6f001f;
+  background: #2a2a2a;
   color: #f2f6ff;
 }
 
@@ -217,7 +217,7 @@ a {
   min-height: 620px;
   display: flex;
   align-items: center;
-  background: linear-gradient(105deg, rgba(75,0,22,.92) 0 50%, rgba(138,0,40,.20) 50%),
+  background: linear-gradient(105deg, rgba(26,26,26,.94) 0 50%, rgba(212,160,23,.12) 50%),
               url('assets/business-card-theme.png') center/cover no-repeat;
 }
 
@@ -226,7 +226,7 @@ a {
   position: absolute;
   inset: 0 0 0 auto;
   width: 43%;
-  background: linear-gradient(90deg, rgba(215,166,74,.10), rgba(58,0,17,.84));
+  background: linear-gradient(90deg, rgba(212,160,23,.10), rgba(15,15,15,.88));
   clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -262,7 +262,7 @@ h2 {
 .lead {
   font-size: 1.2rem;
   max-width: 620px;
-  color: #ffeadd;
+  color: #e5e5e5;
   line-height: 1.55;
 }
 
@@ -276,7 +276,7 @@ h2 {
 /* ================= OWNER CARD ================= */
 .owner-card {
   color: #f2f6ff;
-  background: rgba(58,0,17,.90);
+  background: rgba(26,26,26,.90);
   border-left: 8px solid var(--gold);
   padding: 34px;
   box-shadow: var(--shadow);
@@ -316,11 +316,11 @@ h2 {
 
 /* ================= QUICK CONTACT ================= */
 .quick-contact {
-  background: #3a0011;
+  background: #151515;
   color: #f2f6ff;
   border-top: 1px solid rgba(215,166,74,.34);
   border-bottom: 3px solid var(--gold);
-  box-shadow: 0 14px 34px rgba(138,0,40,.24);
+  box-shadow: 0 14px 34px rgba(0,0,0,.30);
 }
 
 .contact-strip {
@@ -331,7 +331,7 @@ h2 {
 }
 
 .contact-strip strong {
-  color: #eed8cf;
+  color: #e5e5e5;
   display: block;
   font-size: .8rem;
   text-transform: uppercase;
@@ -341,7 +341,7 @@ h2 {
 /* ================= SECTIONS ================= */
 .section {
   padding: 88px 0;
-  background: #4b0016;
+  background: #1a1a1a;
 }
 
 #services {
@@ -357,11 +357,11 @@ h2 {
 }
 
 .card {
-  background: #6f001f;
+  background: #2a2a2a;
   border: 1px solid rgba(215,166,74,.26);
   border-top: 5px solid var(--gold);
   padding: 26px;
-  box-shadow: 0 12px 30px rgba(40,0,12,.32);
+  box-shadow: 0 12px 30px rgba(0,0,0,.28);
 }
 
 .card h3 {
@@ -376,7 +376,7 @@ h2 {
 
 /* ================= ESTIMATE ================= */
 .split-section {
-  background: linear-gradient(135deg, #7d0024, #5c001b);
+  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
   padding: 88px 0;
 }
 
@@ -401,7 +401,7 @@ h2 {
 }
 
 .estimate-form {
-  background: #4b0016;
+  background: #1a1a1a;
   color: #f2f6ff;
   padding: 34px;
   border-radius: 18px;
@@ -423,7 +423,7 @@ input, select, textarea {
   border: 1px solid rgba(215,166,74,.36);
   border-radius: 10px;
   font: inherit;
-  background: #6f001f;
+  background: #2a2a2a;
   color: #f2f6ff;
 }
 
@@ -448,7 +448,7 @@ input, select, textarea {
 }
 
 .faq-item {
-  background: rgba(255,238,220,.08);
+  background: rgba(255,255,255,.06);
   border: 1px solid rgba(215,166,74,.26);
   border-radius: 8px;
   overflow: hidden;
@@ -490,7 +490,7 @@ input, select, textarea {
 
 /* ================= FOOTER (FIXED PROPERLY) ================= */
 .footer {
-  background: #170007;
+  background: #0f0f0f;
   color: #f2f6ff;
   padding: 60px 0 25px;
 }
@@ -557,10 +557,10 @@ input, select, textarea {
     top: 100%;
     left: 0;
     right: 0;
-    background: #2a000c;
+    background: #111111;
     flex-direction: column;
     padding: 20px;
-    box-shadow: 0 10px 25px rgba(40,0,12,.34);
+    box-shadow: 0 10px 25px rgba(0,0,0,.34);
     gap: 18px;
     z-index: 100;
   }
@@ -572,7 +572,7 @@ input, select, textarea {
   .hero {
     min-height: auto;
     padding: 110px 0 70px;
-    background: linear-gradient(135deg, #7d0024, #5c001b 52%, #3a0011) !important;
+    background: linear-gradient(135deg, #2a2a2a, #1a1a1a 52%, #111111) !important;
   }
 
   .hero::after {
@@ -677,9 +677,9 @@ input, select, textarea {
   position: absolute;
   border: 0;
   color: #f2f6ff;
-  background: rgba(111,0,31,.96);
+  background: rgba(42,42,42,.96);
   cursor: pointer;
-  box-shadow: 0 10px 30px rgba(40,0,12,.48);
+  box-shadow: 0 10px 30px rgba(0,0,0,.48);
 }
 
 .lightbox-close {
@@ -748,7 +748,7 @@ input, select, textarea {
   bottom: 20px;
   right: 20px;
   overflow: hidden;
-  background: linear-gradient(135deg, #ffe4a0, var(--gold) 48%, #9f6f1d);
+  background: linear-gradient(135deg, #f7df9a, var(--gold) 48%, #8f6b10);
   color: #030915;
   padding: 15px 22px;
   border-radius: 999px;
@@ -756,6 +756,7 @@ input, select, textarea {
   z-index: 9999;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
+
 
 
 
