@@ -1,17 +1,17 @@
 ﻿:root {
   --red: #f97316;
   --dark-red: #c24f0c;
-  --black: #050b12;
-  --charcoal: #0a2342;
-  --text: #ffffff;
-  --muted: #d9dee4;
-  --white: #142f4d;
+  --black: #0a2342;
+  --charcoal: #f4f6f8;
+  --text: #2f343a;
+  --muted: #5c6770;
+  --white: #ffffff;
   --gold: #f97316;
   --navy: #0a2342;
   --electric-blue: #f97316;
   --cyan-blue: #ff9a3d;
   --deep-blue: #071a31;
-  --shadow: 0 18px 45px rgba(0, 0, 0, .30);
+  --shadow: 0 18px 45px rgba(10, 35, 66, .14);
 }
 
 * { box-sizing: border-box; }
@@ -21,7 +21,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--text);
-  background: #0a2342;
+  background: #ffffff;
 }
 
 body.loading {
@@ -100,9 +100,10 @@ a {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: #000;
-  border-bottom: 1px solid rgba(249,115,22,.46);
-  box-shadow: 0 6px 24px rgba(0,0,0,.34);
+  background: var(--navy);
+  color: #ffffff;
+  border-bottom: 3px solid rgba(249,115,22,.88);
+  box-shadow: 0 6px 24px rgba(10,35,66,.18);
 }
 
 .nav {
@@ -137,16 +138,16 @@ a {
   justify-content: flex-end;
   gap: 6px;
   padding: 5px 12px;
-  background: #071a31;
-  border-bottom: 1px solid rgba(249,115,22,.30);
+  background: var(--navy);
+  border-bottom: 1px solid rgba(249,115,22,.28);
 }
 
 .language-strip button {
   padding: 4px 9px;
   border: 1px solid rgba(249,115,22,.42);
   border-radius: 4px;
-  background: #142f4d;
-  color: #f2f6ff;
+  background: var(--navy);
+  color: #ffffff;
   font: inherit;
   font-size: .78rem;
   line-height: 1.1;
@@ -200,8 +201,8 @@ a {
   padding: 10px 18px;
   border-radius: 10px;
   font-weight: 900;
-  background: #142f4d;
-  color: #f2f6ff;
+  background: #ffffff;
+  color: var(--navy);
 }
 
 .menu-btn {
@@ -209,6 +210,7 @@ a {
   background: none;
   border: 0;
   font-size: 32px;
+  color: #ffffff;
 }
 
 /* ================= HERO ================= */
@@ -217,7 +219,7 @@ a {
   min-height: 620px;
   display: flex;
   align-items: center;
-  background: linear-gradient(105deg, rgba(10,35,66,.94) 0 50%, rgba(249,115,22,.12) 50%),
+  background: linear-gradient(105deg, rgba(255,255,255,.96) 0 50%, rgba(249,115,22,.10) 50%),
               url('assets/business-card-theme.png') center/cover no-repeat;
 }
 
@@ -226,7 +228,7 @@ a {
   position: absolute;
   inset: 0 0 0 auto;
   width: 43%;
-  background: linear-gradient(90deg, rgba(249,115,22,.10), rgba(7,26,49,.88));
+  background: linear-gradient(90deg, rgba(249,115,22,.08), rgba(10,35,66,.12));
   clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -262,7 +264,7 @@ h2 {
 .lead {
   font-size: 1.2rem;
   max-width: 620px;
-  color: #e5e5e5;
+  color: #5c6770;
   line-height: 1.55;
 }
 
@@ -275,8 +277,8 @@ h2 {
 
 /* ================= OWNER CARD ================= */
 .owner-card {
-  color: #f2f6ff;
-  background: rgba(7,26,49,.90);
+  color: #ffffff;
+  background: var(--navy);
   border-left: 8px solid var(--gold);
   padding: 34px;
   box-shadow: var(--shadow);
@@ -316,8 +318,8 @@ h2 {
 
 /* ================= QUICK CONTACT ================= */
 .quick-contact {
-  background: #081d36;
-  color: #f2f6ff;
+  background: #f4f6f8;
+  color: var(--text);
   border-top: 1px solid rgba(249,115,22,.32);
   border-bottom: 3px solid var(--gold);
   box-shadow: 0 14px 34px rgba(0,0,0,.28);
@@ -331,7 +333,7 @@ h2 {
 }
 
 .contact-strip strong {
-  color: #e5e5e5;
+  color: #5c6770;
   display: block;
   font-size: .8rem;
   text-transform: uppercase;
@@ -341,7 +343,7 @@ h2 {
 /* ================= SECTIONS ================= */
 .section {
   padding: 88px 0;
-  background: #0a2342;
+  background: #ffffff;
 }
 
 #services {
@@ -357,8 +359,8 @@ h2 {
 }
 
 .card {
-  background: #142f4d;
-  border: 1px solid rgba(92,103,112,.36);
+  background: #ffffff;
+  border: 1px solid rgba(92,103,112,.24);
   border-top: 5px solid var(--gold);
   padding: 26px;
   box-shadow: 0 12px 30px rgba(0,0,0,.26);
@@ -376,7 +378,7 @@ h2 {
 
 /* ================= ESTIMATE ================= */
 .split-section {
-  background: linear-gradient(135deg, #142f4d, #0a2342);
+  background: linear-gradient(135deg, #ffffff, #f4f6f8);
   padding: 88px 0;
 }
 
@@ -389,7 +391,7 @@ h2 {
 
 .estimate-section {
   background: var(--charcoal);
-  color: #f2f6ff;
+  color: var(--text);
   padding: 100px 0 120px;
 }
 
@@ -401,12 +403,12 @@ h2 {
 }
 
 .estimate-form {
-  background: #0a2342;
-  color: #f2f6ff;
+  background: #ffffff;
+  color: var(--text);
   padding: 34px;
   border-radius: 18px;
   box-shadow: var(--shadow);
-  border: 1px solid rgba(92,103,112,.36);
+  border: 1px solid rgba(92,103,112,.24);
   display: grid;
   gap: 18px;
 }
@@ -423,8 +425,8 @@ input, select, textarea {
   border: 1px solid rgba(92,103,112,.50);
   border-radius: 10px;
   font: inherit;
-  background: #142f4d;
-  color: #f2f6ff;
+  background: #ffffff;
+  color: var(--text);
 }
 
 .form-note {
@@ -449,7 +451,7 @@ input, select, textarea {
 
 .faq-item {
   background: rgba(255,255,255,.06);
-  border: 1px solid rgba(92,103,112,.36);
+  border: 1px solid rgba(92,103,112,.24);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -484,14 +486,14 @@ input, select, textarea {
 .faq-item p {
   margin: 0;
   padding: 0 18px 18px;
-  color: #ddd;
+  color: #5c6770;
   line-height: 1.55;
 }
 
 /* ================= FOOTER (FIXED PROPERLY) ================= */
 .footer {
-  background: #050b12;
-  color: #f2f6ff;
+  background: var(--navy);
+  color: #ffffff;
   padding: 60px 0 25px;
 }
 
@@ -510,7 +512,7 @@ input, select, textarea {
 
 .footer a {
   display: block;
-  color: #ddd;
+  color: #e5e5e5;
   margin: 6px 0;
 }
 
@@ -519,7 +521,7 @@ input, select, textarea {
 }
 
 .footer p {
-  color: #aaa;
+  color: #d9dee4;
   margin: 6px 0 0;
 }
 
@@ -529,7 +531,7 @@ input, select, textarea {
   padding-top: 15px;
   text-align: center;
   font-size: .85rem;
-  color: #888;
+  color: #d9dee4;
 }
 
 /* ================= MOBILE ================= */
@@ -557,7 +559,8 @@ input, select, textarea {
     top: 100%;
     left: 0;
     right: 0;
-    background: #071a31;
+    background: #ffffff;
+    color: var(--text);
     flex-direction: column;
     padding: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,.34);
@@ -572,7 +575,7 @@ input, select, textarea {
   .hero {
     min-height: auto;
     padding: 110px 0 70px;
-    background: linear-gradient(135deg, #142f4d, #0a2342 52%, #071a31) !important;
+    background: linear-gradient(135deg, #ffffff, #f4f6f8 55%, #e9edf1) !important;
   }
 
   .hero::after {
@@ -676,8 +679,8 @@ input, select, textarea {
 .lightbox-arrow {
   position: absolute;
   border: 0;
-  color: #f2f6ff;
-  background: rgba(20,47,77,.96);
+  color: #ffffff;
+  background: rgba(10,35,66,.96);
   cursor: pointer;
   box-shadow: 0 10px 30px rgba(0,0,0,.48);
 }
@@ -756,6 +759,10 @@ input, select, textarea {
   z-index: 9999;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
+
+
+
+
 
 
 
