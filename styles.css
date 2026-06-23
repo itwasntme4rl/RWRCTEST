@@ -1,12 +1,12 @@
 :root {
-  --red: #d7a93f;
-  --dark-red: #a87a1d;
+  --red: #ffd76a;
+  --dark-red: #f0aa18;
   --black: #07152d;
   --charcoal: #0b1f3f;
   --text: #f2f6ff;
   --muted: #b8c4d8;
   --white: #07152d;
-  --gold: #d7a93f;
+  --gold: #ffd76a;
   --navy: #07152d;
   --shadow: 0 18px 45px rgba(7, 21, 45, .18);
 }
@@ -72,6 +72,13 @@ body.loading {
 @media (prefers-reduced-motion: reduce) {
   .page-loader img {
     animation: none;
+  }
+
+  .call-btn::after,
+  .primary-btn::after,
+  .floating-call::after {
+    animation: none;
+    display: none;
   }
 }
 
@@ -151,14 +158,38 @@ a {
 /* ================= BUTTONS ================= */
 .call-btn,
 .primary-btn {
-  background: linear-gradient(135deg, var(--red), var(--dark-red));
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffe28a, var(--red) 45%, var(--dark-red));
   color: #07152d;
   padding: 11px 18px;
   border-radius: 10px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 12px 34px rgba(255,215,106,.24), var(--shadow);
   border: 0;
   font-weight: 800;
   cursor: pointer;
+}
+
+.call-btn::after,
+.primary-btn::after,
+.floating-call::after {
+  content: "";
+  position: absolute;
+  inset: -30% auto -30% -70%;
+  width: 55%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.58), transparent);
+  transform: skewX(-18deg);
+  animation: gold-shine 3.4s ease-in-out infinite;
+}
+
+@keyframes gold-shine {
+  0%, 42% {
+    left: -70%;
+  }
+
+  68%, 100% {
+    left: 125%;
+  }
 }
 
 .secondary-btn {
@@ -704,7 +735,8 @@ input, select, textarea {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: var(--red);
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffe28a, var(--red) 45%, var(--dark-red));
   color: #07152d;
   padding: 15px 22px;
   border-radius: 999px;
