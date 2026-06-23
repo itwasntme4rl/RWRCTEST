@@ -43,14 +43,73 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="canonical" href="https://realworldroofing.com">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RoofingContractor",
+      "name": "Real World Roofing Construction Inc",
+      "url": "https://www.realworldroofing.com",
+      "logo": "https://www.realworldroofing.com/assets/logo.png",
+      "description": "Licensed and insured roofing contractor serving Arkansas with roof repair, roof replacement, storm damage repair, and new construction roofing services.",
+      "telephone": "+15015294768",
+      "email": "realworldroofing@gmail.com",
+      "areaServed": {
+        "@type": "State",
+        "name": "Arkansas"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Geovanny Zelaya"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Roofing Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Roof Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Roof Replacement"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Storm Damage Roofing"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "New Construction Roofing"
+            }
+          }
+        ]
+      }
+    }
+    </script>
 </head>
 
 
 
 <body>
+<div class="page-loader" id="pageLoader" aria-label="Loading website">
+    <img src="assets/spinlogo.png" alt="Real World Roofing">
+</div>
+
 <header class="site-header">
 <nav class="nav container">
-<a class="brand" href="#"><img src="assets/logo.png" alt="Real World Roofing"></a>
+<a class="brand" href="#"><img src="assets/spinlogo.png" alt="Real World Roofing"></a>
 <button class="menu-btn" id="menuBtn">☰</button>
 <div class="nav-links" id="navLinks">
 <a href="#services">Services</a>
@@ -64,23 +123,6 @@
 <div class="language-strip">
     <button onclick="switchLanguage('en')">🇺🇸 English</button>
     <button onclick="switchLanguage('es')">🇪🇸 Español</button>
-</div>
-
-<div class="storm-alert" aria-label="Storm damage alert">
-    <div class="storm-alert-track">
-        <span
-            class="storm-alert-message"
-            data-en="Emergency roof leak or storm damage? Fast inspections available across Arkansas. Call 501.529.4768."
-            data-es="¿Gotera de emergencia o daños por tormenta? Inspecciones rápidas disponibles en Arkansas. Llame al 501.529.4768.">
-            Emergency roof leak or storm damage? Fast inspections available across Arkansas. Call 501.529.4768.
-        </span>
-        <span
-            class="storm-alert-message"
-            data-en="Emergency roof leak or storm damage? Fast inspections available across Arkansas. Call 501.529.4768."
-            data-es="¿Gotera de emergencia o daños por tormenta? Inspecciones rápidas disponibles en Arkansas. Llame al 501.529.4768.">
-            Emergency roof leak or storm damage? Fast inspections available across Arkansas. Call 501.529.4768.
-        </span>
-    </div>
 </div>
 
 <section class="hero">
@@ -162,7 +204,7 @@ Roof leak repairs, missing shingle replacement, emergency roofing services, and 
 </div>
 </section>
 
-<section class="section">
+<section id="gallery" class="section">
     <div class="container">
         <h2>Recent Projects</h2>
         <div class="gallery-grid">
@@ -173,10 +215,20 @@ Roof leak repairs, missing shingle replacement, emergency roofing services, and 
             <img src="assets/image5.png" alt="Project 5">
             <img src="assets/image6.png" alt="Project 6">
             <img src="assets/image7.png" alt="Project 7">
-            
+            <img src="assets/image8.png" alt="Project 8">
+            <img src="assets/image9.png" alt="Project 9">
+            <img src="assets/image10.png" alt="Project 10">
+            <img src="assets/image11.png" alt="Project 11">
         </div>
     </div>
 </section>
+
+<div class="gallery-lightbox" id="galleryLightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close project image">&times;</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous project image">&#8249;</button>
+    <img id="lightboxImage" src="" alt="">
+    <button class="lightbox-arrow lightbox-next" id="lightboxNext" type="button" aria-label="Next project image">&#8250;</button>
+</div>
 
 <section id="estimate" class="estimate-section">
     <div class="container estimate-grid">
@@ -227,6 +279,45 @@ Roof leak repairs, missing shingle replacement, emergency roofing services, and 
 
             <p id="formNote"></p>
         </form>
+    </div>
+
+    <div class="container estimate-faq">
+        <p class="eyebrow" data-en="COMMON QUESTIONS" data-es="PREGUNTAS COMUNES">COMMON QUESTIONS</p>
+        <h2 data-en="Before You Request An Estimate" data-es="Antes De Solicitar Un Estimado">Before You Request An Estimate</h2>
+
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary data-en="Are you licensed and insured?" data-es="¿Están licenciados y asegurados?">Are you licensed and insured?</summary>
+                <p data-en="Yes. Real World Roofing Construction Inc is licensed and insured for professional roofing work."
+                   data-es="Sí. Real World Roofing Construction Inc está licenciado y asegurado para trabajos profesionales de techado.">
+                    Yes. Real World Roofing Construction Inc is licensed and insured for professional roofing work.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary data-en="Do you offer free estimates?" data-es="¿Ofrecen estimados gratis?">Do you offer free estimates?</summary>
+                <p data-en="Yes. Call or send the form and we will follow up about the roof, repair, or replacement."
+                   data-es="Sí. Llame o envíe el formulario y le responderemos sobre el techo, reparación o reemplazo.">
+                    Yes. Call or send the form and we will follow up about the roof, repair, or replacement.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary data-en="Do you handle storm damage?" data-es="¿Atienden daños por tormenta?">Do you handle storm damage?</summary>
+                <p data-en="Yes. We inspect leaks, missing shingles, flashing issues, and storm-related roof damage."
+                   data-es="Sí. Inspeccionamos goteras, tejas faltantes, problemas de flashing y daños de techo por tormenta.">
+                    Yes. We inspect leaks, missing shingles, flashing issues, and storm-related roof damage.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary data-en="What areas do you serve?" data-es="¿Qué áreas atienden?">What areas do you serve?</summary>
+                <p data-en="We proudly serve homeowners and businesses across Arkansas."
+                   data-es="Servimos con orgullo a hogares y negocios en todo Arkansas.">
+                    We proudly serve homeowners and businesses across Arkansas.
+                </p>
+            </details>
+        </div>
     </div>
 </section>
 
