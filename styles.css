@@ -1,17 +1,17 @@
-:root {
+﻿:root {
   --red: #008cff;
   --dark-red: #0047c7;
-  --black: #030915;
-  --charcoal: #071b3d;
+  --black: #000000;
+  --charcoal: #082f6f;
   --text: #f2f6ff;
-  --muted: #aebbd0;
-  --white: #06142d;
-  --gold: #f5c85b;
-  --navy: #06142d;
+  --muted: #b8ccef;
+  --white: #0a397d;
+  --gold: #ffda6a;
+  --navy: #082a5f;
   --electric-blue: #008cff;
-  --cyan-blue: #00c8ff;
-  --deep-blue: #0047c7;
-  --shadow: 0 18px 45px rgba(0, 140, 255, .18);
+  --cyan-blue: #21c7ff;
+  --deep-blue: #0058c8;
+  --shadow: 0 18px 45px rgba(0, 140, 255, .24);
 }
 
 * { box-sizing: border-box; }
@@ -21,7 +21,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--text);
-  background: #06142d;
+  background: #082a5f;
 }
 
 body.loading {
@@ -102,7 +102,7 @@ a {
   z-index: 50;
   background: #000;
   border-bottom: 1px solid rgba(0,140,255,.45);
-  box-shadow: 0 6px 24px rgba(0,140,255,.14);
+  box-shadow: 0 6px 24px rgba(0,140,255,.26);
 }
 
 .nav {
@@ -137,15 +137,15 @@ a {
   justify-content: flex-end;
   gap: 6px;
   padding: 5px 12px;
-  background: #050b18;
-  border-bottom: 1px solid rgba(0,140,255,.28);
+  background: #061d45;
+  border-bottom: 1px solid rgba(0,140,255,.32);
 }
 
 .language-strip button {
   padding: 4px 9px;
-  border: 1px solid rgba(0,140,255,.42);
+  border: 1px solid rgba(33,199,255,.42);
   border-radius: 4px;
-  background: #071b3d;
+  background: #0a397d;
   color: #f2f6ff;
   font: inherit;
   font-size: .78rem;
@@ -196,11 +196,11 @@ a {
 }
 
 .secondary-btn {
-  border: 2px solid rgba(0,200,255,.58);
+  border: 2px solid rgba(33,199,255,.58);
   padding: 10px 18px;
   border-radius: 10px;
   font-weight: 900;
-  background: #071b3d;
+  background: #0a397d;
   color: #f2f6ff;
 }
 
@@ -217,7 +217,7 @@ a {
   min-height: 620px;
   display: flex;
   align-items: center;
-  background: linear-gradient(105deg, rgba(7,21,45,.92) 0 50%, rgba(0,0,0,.28) 50%),
+  background: linear-gradient(105deg, rgba(8,42,95,.92) 0 50%, rgba(0,140,255,.16) 50%),
               url('assets/business-card-theme.png') center/cover no-repeat;
 }
 
@@ -226,7 +226,7 @@ a {
   position: absolute;
   inset: 0 0 0 auto;
   width: 43%;
-  background: linear-gradient(90deg, rgba(7,21,45,.25), rgba(7,21,45,.88));
+  background: linear-gradient(90deg, rgba(0,140,255,.16), rgba(6,31,76,.82));
   clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -262,7 +262,7 @@ h2 {
 .lead {
   font-size: 1.2rem;
   max-width: 620px;
-  color: #d8e4f7;
+  color: #e4f0ff;
   line-height: 1.55;
 }
 
@@ -276,7 +276,7 @@ h2 {
 /* ================= OWNER CARD ================= */
 .owner-card {
   color: #f2f6ff;
-  background: rgba(3,9,21,.84);
+  background: rgba(5,32,76,.90);
   border-left: 8px solid var(--gold);
   padding: 34px;
   box-shadow: var(--shadow);
@@ -316,7 +316,7 @@ h2 {
 
 /* ================= QUICK CONTACT ================= */
 .quick-contact {
-  background: #020814;
+  background: #061f4c;
   color: #f2f6ff;
   border-top: 1px solid rgba(0,200,255,.3);
   border-bottom: 3px solid var(--gold);
@@ -341,7 +341,7 @@ h2 {
 /* ================= SECTIONS ================= */
 .section {
   padding: 88px 0;
-  background: #06142d;
+  background: #082a5f;
 }
 
 #services {
@@ -357,11 +357,11 @@ h2 {
 }
 
 .card {
-  background: #071b3d;
-  border: 1px solid rgba(0,200,255,.22);
+  background: #0a397d;
+  border: 1px solid rgba(33,199,255,.28);
   border-top: 5px solid var(--gold);
   padding: 26px;
-  box-shadow: 0 12px 30px rgba(7,21,45,.08);
+  box-shadow: 0 12px 30px rgba(0,48,112,.28);
 }
 
 .card h3 {
@@ -376,7 +376,7 @@ h2 {
 
 /* ================= ESTIMATE ================= */
 .split-section {
-  background: linear-gradient(135deg, #06142d, #071b3d);
+  background: linear-gradient(135deg, #0a4da3, #0a397d);
   padding: 88px 0;
 }
 
@@ -401,12 +401,12 @@ h2 {
 }
 
 .estimate-form {
-  background: #06142d;
+  background: #082a5f;
   color: #f2f6ff;
   padding: 34px;
   border-radius: 18px;
   box-shadow: var(--shadow);
-  border: 1px solid rgba(0,200,255,.24);
+  border: 1px solid rgba(33,199,255,.28);
   display: grid;
   gap: 18px;
 }
@@ -420,10 +420,10 @@ input, select, textarea {
   width: 100%;
   margin-top: 6px;
   padding: 14px;
-  border: 1px solid rgba(0,200,255,.34);
+  border: 1px solid rgba(33,199,255,.38);
   border-radius: 10px;
   font: inherit;
-  background: #071b3d;
+  background: #0a397d;
   color: #f2f6ff;
 }
 
@@ -448,8 +448,8 @@ input, select, textarea {
 }
 
 .faq-item {
-  background: rgba(255,255,255,.07);
-  border: 1px solid rgba(0,200,255,.25);
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(33,199,255,.28);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -490,7 +490,7 @@ input, select, textarea {
 
 /* ================= FOOTER (FIXED PROPERLY) ================= */
 .footer {
-  background: #040d1d;
+  background: #041631;
   color: #f2f6ff;
   padding: 60px 0 25px;
 }
@@ -524,7 +524,7 @@ input, select, textarea {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(0,200,255,0.22);
+  border-top: 1px solid rgba(33,199,255,0.24);
   margin-top: 35px;
   padding-top: 15px;
   text-align: center;
@@ -557,10 +557,10 @@ input, select, textarea {
     top: 100%;
     left: 0;
     right: 0;
-    background: #050b18;
+    background: #061d45;
     flex-direction: column;
     padding: 20px;
-    box-shadow: 0 10px 25px rgba(7,21,45,.12);
+    box-shadow: 0 10px 25px rgba(0,48,112,.28);
     gap: 18px;
     z-index: 100;
   }
@@ -572,7 +572,7 @@ input, select, textarea {
   .hero {
     min-height: auto;
     padding: 110px 0 70px;
-    background: linear-gradient(135deg, #06142d, #071b3d) !important;
+    background: linear-gradient(135deg, #0a4da3, #0a397d 52%, #061f4c) !important;
   }
 
   .hero::after {
@@ -677,9 +677,9 @@ input, select, textarea {
   position: absolute;
   border: 0;
   color: #f2f6ff;
-  background: rgba(0,140,255,.92);
+  background: rgba(0,140,255,.96);
   cursor: pointer;
-  box-shadow: 0 10px 30px rgba(7,21,45,.35);
+  box-shadow: 0 10px 30px rgba(0,48,112,.42);
 }
 
 .lightbox-close {
@@ -756,3 +756,6 @@ input, select, textarea {
   z-index: 9999;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
+
+
+
